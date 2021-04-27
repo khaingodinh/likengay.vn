@@ -1,0 +1,230 @@
+/* =======FONTS======== */
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+/* =======COMMON========= */
+body {
+    margin: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #212529;
+}
+
+/* =========HEADER=========== */
+.header {
+    padding: 15px 60px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.header__logo-wrapper {
+    width: 300px;
+}
+
+.header__logo-wrapper img {
+    width: 79px;
+    height: 60px;
+}
+
+.header__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header__search img {
+    position: absolute;
+    margin-left: 12px;
+}
+
+.header__search input {
+    width: 315px;
+    background: #EEEEEE;
+    border-radius: 22.5px;
+    border: none;
+    outline: none;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16.41px;
+    padding: 12px 12px 12px 43px;
+}
+
+.header__profile {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    margin-left: auto;
+}
+
+.header__profile__avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.header__profile__name {
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 700;
+    line-height: 16.1px;
+    margin: 0 10px;
+}
+
+
+.header__profile__menu {
+    width: 45px;
+    height: 45px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6px;
+}
+
+/* ========MAIN=========== */
+.main {
+    background-color: #EEF0F4;
+    display: flex;
+    flex-direction: row;
+    padding: 115px 60px 24px;
+}
+
+/* =========LEFT-MENU=========== */
+.left-menu {
+    width: 450px;
+}
+
+.left-menu ul.menu-item {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu ul.menu-item li {
+    margin-top: 15px;
+}
+
+.left-menu ul.menu-item li a {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu ul.menu-item li .left-menu__img {
+    width: 40px;
+    text-align: left;
+}
+
+.left-menu ul.menu-item li span {
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 700;
+    line-height: 16.1px;
+}
+
+.left-menu ul.menu-item li ul.sub-menu-item li a {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu ul.menu-item li ul.sub-menu-item {
+    margin-left: 20px;
+    padding-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-menu ul.menu-item li ul.sub-menu-item .sub-menu-item__name {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    margin-left: 10px;
+    width: 155px;
+}
+
+.left-menu ul.menu-item li ul.sub-menu-item .sub-menu-item__name.active {
+    font-weight: bold;
+}
+
+.left-menu ul.menu-item li ul.sub-menu-item .sub-menu-item__hot span {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 11px;
+}
+
+/* =========CONTENT============ */
+
+.content-wrapper {
+    width: 100%;
+}
+
+.content-wrapper .content {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1280px) {
+    .content-wrapper .content {
+        max-width: 450px;
+    }
+}
+
+/* =========RIGHT-MENU========= */
+.right-menu {
+    width: 420px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+/* ========TABLE-PAGINATION========= */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+}
+
+.pagination a.pagination__page {
+    padding: 3px 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE;
+    border-radius: 2px;
+}
+
+.pagination a.pagination__page.selected {
+    background: #F04C24;
+    color: #fff;
+}

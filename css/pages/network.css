@@ -1,0 +1,239 @@
+/* =========NETWORK-CONTENT======== */
+.network {
+    margin-top: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 22px 29px;
+}
+
+.network .network__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.network .network__item {
+    background: #FFFFFF;
+    border: 1px solid #656565;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.network .network__item.selected {
+    background: #fcdbd3;
+}
+
+.network .network__item .network__item__logo {
+    min-height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.network .network__item .network__item__selected-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.network .network__item .network__item__discount {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.network .network__item.j__network__amount {
+    padding: 17px 0;
+    margin-bottom: 17px;
+}
+
+.network .network__item .network__item__amount {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #090909;
+}
+
+.network .network__input {
+    margin-bottom: 15px;
+}
+
+.network .network__input span {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    width: 50px;
+    display: inline-block;
+}
+
+.network .network__input input {
+    background: #EEEEEE;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding: 6px 0;
+    min-width: 300px;
+    margin-left: 12px;
+}
+
+.network .network__total {
+    display: flex;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 24px;
+}
+
+.network .network__total .network__total__amount {
+    margin-left: auto;
+}
+
+.network .network__submit-btn {
+    background: #F04C24;
+    border-radius: 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px 0;
+    border: 0;
+    outline: none;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.recharge__warning {
+    background: #FFDF8D;
+    border-radius: 10px;
+    padding: 9px 11px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.recharge__warning__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F04C24;
+}
+
+.recharge__warning__content ul li {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F04C24;
+}
+
+/* =========NETWORK-RECHARGE-HISTORY======== */
+.recharge-history {
+    margin-bottom: 50px;
+}
+
+.recharge-history .recharge-history__header {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #F04C24;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.recharge-history .recharge-history__item {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CACACA;
+    margin-bottom: 9px;
+}
+
+.recharge-history .recharge-history__item .recharge-history__item__header {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3F3F3F;
+    margin-bottom: 2px;
+}
+
+.recharge-history .recharge-history__item .recharge-history__item__info {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3F3F3F;
+    margin-bottom: 2px;
+}
+
+.recharge-history .recharge-history__item .recharge-history__item__price {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3F3F3F;
+    margin-left: auto;
+}
+
+.recharge-history .recharge-history__item .recharge-history__item__status {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F04C24;
+    margin-left: auto;
+}
+
+.recharge-history .recharge-history__item .recharge-history__item__price .history__item__price__currency {
+    font-size: 10px;
+}
+
+.recharge-history .recharge-history__loadmore {
+    background: #F04C24;
+    border-radius: 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 0;
+    display: block;
+}

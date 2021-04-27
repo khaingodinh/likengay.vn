@@ -1,0 +1,70 @@
+.contact {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-top: 15px;
+}
+
+.contact .contact__name {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-bottom: 7px;
+}
+
+.contact .contact__icon {
+    width: 125px;
+}
+
+.contact .contact__guide__title {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    width: 100%;
+    margin: 30px 0 7px;
+}
+
+.contact .contact__guide__text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    color: #000000;
+}
+
+/* ============CONTACT-WARNING============= */
+
+.contact__warning {
+    background: #FFDF8D;
+    border-radius: 10px;
+    padding: 9px 11px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contact__warning__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F04C24;
+}
+
+.contact__warning__content ul li {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #F04C24;
+}

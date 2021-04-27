@@ -1,0 +1,63 @@
+.get-id {
+    margin-top: 15px;
+}
+
+.get-id .get-id__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.get-id .get-id__section {
+    margin-bottom: 25px;
+}
+
+.get-id .get-id__form {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 22px 29px;
+}
+
+.get-id .get-id__form .get-id__form__group {
+    display: flex;
+}
+
+.get-id .get-id__form .get-id__form__group .get-id__form__input {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 15px;
+    background: #EEEEEE;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-right: 7px;
+}
+
+.get-id .get-id__form .get-id__form__group .get-id__form__input.profile-id {
+    color: #F04C24;
+}
+
+.get-id .get-id__form .get-id__form__group .get-id__form__btn {
+    background: #F04C24;
+    border-radius: 5px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    width: 110px;
+}
