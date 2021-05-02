@@ -180,6 +180,7 @@ a, a:hover {
 
 .content-wrapper {
     width: 100%;
+    display: flex;
 }
 
 .content-wrapper .content {
@@ -195,7 +196,7 @@ a, a:hover {
 
 /* =========RIGHT-MENU========= */
 .right-menu {
-    width: 420px;
+    width: 300px;
     margin-left: auto;
     margin-top: 15px;
 }
@@ -227,4 +228,102 @@ a, a:hover {
 .pagination a.pagination__page.selected {
     background: #F04C24;
     color: #fff;
+}
+
+/* ==========RESPONSIVE========= */
+.header-sp {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header .header__profile {
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 10px;
+    }
+
+    .main {
+        padding: 115px 15px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-wrapper .content {
+        max-width: none;
+    }
+
+    .main {
+        padding: 125px 0 0;
+    }
+
+    .header {
+        background-color: #F04C24;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header .header__logo-wrapper,
+    .header .header__profile {
+        display: none;
+    }
+
+    .header .header__search {
+        margin-top: 14px;
+    }
+
+    .header .header__search .header__search__group {
+        width: 100%;
+    }
+
+    .header .header__search img {
+        width: 16px;
+    }
+
+    .header .header__search input {
+        font-size: 12px;
+        width: 100%;
+        padding: 8px 8px 8px 43px;
+    }
+
+    .header .header-sp {
+        display: flex;
+        align-items: center;
+        width: 100%
+    }
+
+    .header .header-sp .header-sp__top {
+        display: flex;
+        align-items: center;
+        width: 100%
+    }
+
+    .header .header-sp .header-sp__top .header-sp__top__logo {
+        flex-shrink: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .header .header-sp .header-sp__top .header-sp__top__logo img {
+        margin-left: 60px;
+    }
+
+    .header .header-sp .header-sp__top ul {
+        list-style-type: none;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
+
+    .header .header-sp .header-sp__top ul li {
+        display: inline-block;
+        margin: 0 3px;
+    }
+
+    .left-menu,
+    .right-menu {
+        display: none;
+    }
 }

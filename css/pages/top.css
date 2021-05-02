@@ -1,4 +1,14 @@
 /* ===============RIGHT-SIDE============== */
+.right-menu {
+    padding-left: 20px;
+}
+
+.right-menu .account-balance {
+    width: 100%;
+    padding-left: 20px;
+    float: right;
+}
+
 .right-menu .account-balance .account-balance__title {
     font-family: Roboto-Bold;
     font-style: normal;
@@ -51,7 +61,7 @@
     padding: 3px 8px;
     margin-left: auto;
     cursor: pointer;
-    min-width: 52px;
+    min-width: 56px;
     text-align: center;
 }
 
@@ -132,6 +142,24 @@
     line-height: 16px;
     padding: 12px 20px;
     margin-left: 10px;
+}
+
+.top .top__create-post .top__create-post__buttons_sp {
+    display: none;
+}
+
+.top .top__create-post .top__create-post__buttons_sp img {
+    width: 23px!important;
+    height: 23px!important;
+}
+
+.top .top__create-post .top__create-post__buttons_sp span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+    margin-top: 5px;
 }
 
 .top .top__create-post .top__create-post__buttons a {
@@ -332,4 +360,130 @@
     position: absolute;
     top: 6px;
     right: 15px;
+}
+
+@media (max-width: 1280px) {
+    .right-menu .account-balance {
+        width: auto;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .right-menu {
+        width: 320px;
+    }
+
+    .right-menu .account-balance .account-balance__large-title,
+    .right-menu .account-balance .account-balance__amount {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .right-menu .account-balance {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .top .top__create-post .top__create-post__buttons_sp {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top .top__create-post {
+        border-radius: 0;
+    }
+
+    .top .top__create-post .top__create-post__header {
+        font-size: 14px;
+    }
+
+    .top .top__create-post .top__create-post__form {
+        margin: 6px 0;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .top .top__create-post .top__create-post__form img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .top .top__create-post .top__create-post__form input {
+        font-size: 10px;
+        padding: 12px 15px 11px;
+        line-height: 12px;
+    }
+
+    .top .top__create-post .top__create-post__buttons {
+        display: none;
+    }
+
+    .top .top__post {
+        margin-top: 5px;
+        border-radius: 0;
+    }
+
+    .top .top__post .top__post__header img {
+        width: 35px;
+    }
+
+    .top .top__post .top__post__header .top__post__header__name a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .top .top__post .top__post__header .top__post__header__name .top__post__header__name__new-img {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .top .top__post .top__post__header .top__post__header__time {
+        font-size: 10px;
+        line-height: 12px; 
+    }
+
+    .top .top__post .top__post__body .top__post__body_content {
+        font-size: 10px;
+        line-height: 14px; 
+    }
+
+    .top .top__post .top__post__reaction .top__post__reaction__item {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .top .top__post .top__post__reaction .top__post__reaction__item img {
+        width: 24px;
+    }
+
+    .top .top__post .top__post__comment .top__post__comment__item__avatar img {
+        width: 35px;
+    }
+
+    .top .top__post .top__post__comment .top__post__comment__item .top__post__comment__item__right .top__post__comment__item__right__name,
+    .top .top__post .top__post__comment .top__post__comment__item .top__post__comment__item__right .top__post__comment__item__right__content,
+    .top .top__post .top__post__comment .top__post__comment__item .top__post__comment__item__right .top__post__comment__item__right__reaction li span,
+    .top .top__post .top__post__comment .top__post__comment__item .top__post__comment__item__right .top__post__comment__item__right__reaction li a {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .top .top__post .top__post__form input {
+        font-size: 10px;
+        line-height: 12px;
+        padding: 9px 13px;
+    }
+
+    .top .top__post .top__post__form .top__post__form__buttons {
+        top: 0;
+    }
+
+    .top .top__post .top__post__form .top__post__form__buttons img {
+        width: 13px;
+    }
 }
