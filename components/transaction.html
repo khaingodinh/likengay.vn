@@ -1,0 +1,393 @@
+<link rel="stylesheet" href="css/pages/transaction.css">
+<div class="content">
+    <div class="transaction">
+        <div class="d-flex align-items-center mb-3">
+            <span class="mr-3">Tìm kiếm</span>
+            <div class="transaction__search">
+                <input type="text" name="search" placeholder="Nhập từ khóa"/>
+                <img width="18" src="images/search-icon.png" alt="">
+            </div>
+            <div class="transaction__filter align-items-center">
+                <span class="mr-3">Số dòng</span>
+                <div id="table_filter" class="table-filter">
+                    <div class="table-filter__text mr-1">50</div>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div style="display: none;" id="table_filter_select" class="table-filter-items">
+                    <ul>
+                        <li data-value="50">50</li>
+                        <li data-value="100">100</li>
+                        <li data-value="150">150</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Mã đơn hàng</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Loại</th>
+                        <th scope="col">Bảo hành</th>
+                        <th scope="col">Rech</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Tổng tiền</th>
+                        <th scope="col">Bắt đầu</th>
+                        <th scope="col">Hiện tại</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">Trạng thái</th>
+                        <th scope="col">Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">1 tháng</td>
+                        <td><img width="16" src="images/like-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__completed">Hoàn thành</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="not-maintaince">Không BH</td>
+                        <td><img width="16" src="images/eye-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__active">Đang chạy</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/vip-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__pending">Đang chờ</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                    <tr>
+                        <td>123456789</td>
+                        <td>100010476078980</td>
+                        <td>Tăng Like Fanpage</td>
+                        <td class="maintaince">3 tháng</td>
+                        <td><img width="16" src="images/live-icon.png" alt=""></td>
+                        <td>50.000</td>
+                        <td>20.000 Coin</td>
+                        <td>222</td>
+                        <td>666</td>
+                        <td>Le Anh Tuan</td>
+                        <td class="status__refund">Đã hoàn</td>
+                        <td>Admin thông báo đến từ admin đây!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center pagination">
+            <a class="prev" href="#"><i class="fas fa-chevron-left"></i></a>
+            <a class="pagination__page selected" href="#">1</a>
+            <a class="pagination__page" href="#">2</a>
+            <a class="pagination__page" href="#">3</a>
+            <a class="pagination__page" href="#">4</a>
+            <a class="next" href="#"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+<script src="js/pages/transaction.js"></script>

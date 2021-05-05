@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages/top.css">
-    <link rel="stylesheet" href="css/pages/recharge.css">
 </head>
 <body>
     <div class="header">
@@ -18,7 +17,7 @@
                 <a id="menu-sp" class="d-flex align-items-center" href="javascript:;">
                     <img width="24" src="images/menu-icon.png" alt="">
                 </a>
-                <a class="d-flex align-items-center ml-2" href="#">
+                <a class="d-flex align-items-center ml-2 j-account" href="#">
                     <img width="26" src="images/avatar.png" alt="">
                 </a>
                 <div class="header-sp__top__logo">
@@ -29,7 +28,7 @@
                 <div class="header-sp__top__menu">
                     <ul>
                         <li><a href="#"><img width="26" src="images/bell-icon.png" alt=""></a></li>
-                        <li><a href="#"><img width="26" src="images/question-icon.png" alt=""></a></li>
+                        <li><a class="j-guide" href="#"><img width="26" src="images/question-icon.png" alt=""></a></li>
                         <li><a class="j-currency" href="javascript:;"><img width="26" src="images/currency-icon.png" alt=""></a></li>
                     </ul>
                 </div>
@@ -45,12 +44,14 @@
             </div>
         </div>
         <div class="header__profile">
-            <img class="header__profile__avatar" src="images/avatar.png" alt="">
+            <a class="j-account" href="javascript:;">
+                <img class="header__profile__avatar" src="images/avatar.png" alt="">
+            </a> 
             <div class="header__profile__name">Lê Anh Tuấn</div>
             <a href="#" class="header__profile__menu">
                 <img width="28" src="images/bell.png" alt="">
             </a>
-            <a href="#" class="header__profile__menu">
+            <a href="javascript:;" class="header__profile__menu j-guide">
                 <img width="12" src="images/question-mark.png" alt="">
             </a>
             <a href="#" class="header__profile__menu">
@@ -76,25 +77,25 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="network" href="javascript:;">
                                 <img width="17" src="images/account-submenu-2.png" alt="">
                                 <span class="sub-menu-item__name">Nạp tiền bằng thẻ cào</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="transaction" href="#">
                                 <img width="17" src="images/account-submenu-3.png" alt="">
                                 <span class="sub-menu-item__name">Lịch sử giao dịch</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="get-id" href="#">
                                 <img width="17" src="images/account-submenu-4.png" alt="">
                                 <span class="sub-menu-item__name">Lấy ID</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="contact" href="javascript:;">
                                 <img width="17" src="images/account-submenu-5.png" alt="">
                                 <span class="sub-menu-item__name">Liên hệ hỗ trợ</span>
                             </a>
@@ -110,7 +111,7 @@
                     </a>
                     <ul id="menu2" class="sub-menu-item collapse" data-parent="#menu">
                         <li>
-                            <a href="#">
+                            <a data-menu="like-fanpage" href="#">
                                 <img width="17" src="images/menu-2.png" alt="">
                                 <span class="sub-menu-item__name">Like Page 1 (Duyệt Tay)</span>
                                 <div class="sub-menu-item__hot">
@@ -120,7 +121,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="like-fanpage" href="#">
                                 <img width="17" src="images/menu-2.png" alt="">
                                 <span class="sub-menu-item__name">Like Page 2 (fsub.lebooks.me)</span>
                                 <div class="sub-menu-item__hot">
@@ -130,7 +131,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-menu="like-fanpage" href="#">
                                 <img width="17" src="images/menu-2.png" alt="">
                                 <span class="sub-menu-item__name">Like Page 3 (autofb88)</span>
                                 <div class="sub-menu-item__hot">
@@ -469,39 +470,6 @@
                 </div>
             </div>
             <div class="right-menu">
-                <div class="account-balance">
-                    <div class="account-balance__title">Mức tài khoản hiện tại</div>
-                    <div class="account-balance__large-title">Cộng tác viên</div>
-                    <div class="account-balance__title">Số dư tài khoản</div>
-                    <div class="account-balance__amount has-border">
-                        <span>1.234.567</span>
-                        <img src="images/currency.png" alt="">
-                    </div>
-                    <div class="account-balance__title">Tổng số tiền đã nạp</div>
-                    <div class="account-balance__amount has-border">
-                        <span>1.234.567</span>
-                        <img src="images/currency.png" alt="">
-                    </div>
-                    <div class="account-balance__title filter">
-                        Tổng số tiền đã chi tiêu
-                        <div id="amount_filter" class="amount-filter">
-                            <span class="amount-filter__text">Tháng</span>
-                            <i class="fas fa-caret-down"></i>
-                        </div>
-                        <div style="display: none;" id="amount_filter_select" class="amount-filer-items">
-                            <ul>
-                                <li data-value="month">Tháng</li>
-                                <li data-value="day">Ngày</li>
-                                <li data-value="year">Năm</li>
-                                <li data-value="all">Tất cả</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="account-balance__amount">
-                        <span>1.234.567</span>
-                        <img src="images/currency.png" alt="">
-                    </div>
-                </div>
             </div>
         </div>
     </div>

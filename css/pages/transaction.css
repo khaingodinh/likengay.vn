@@ -42,6 +42,7 @@
 .transaction .transaction__filter {
     margin-left: auto;
     position: relative;
+    display: flex;
 }
 
 .transaction .transaction__filter .table-filter {
@@ -130,4 +131,30 @@
 
 .transaction table tr td.status__refund {
     color: #FA057B;
+}
+
+@media (max-width: 767px) {
+    .transaction {
+        border-radius: 0px;
+    }
+
+    .transaction table {
+        width: 1000px;
+    }
+
+    .transaction .transaction__search input {
+        width: 100%;
+    }
+
+    .transaction__search {
+        width: 100%;
+    }
+
+    .transaction span {
+        width: 90px;
+    }
+
+    .transaction .transaction__filter {
+        display: none;
+    }
 }

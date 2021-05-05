@@ -54,3 +54,19 @@
     line-height: 16px;
     color: #F04C24;
 }
+
+@media (max-width: 767px) {
+    .main {
+        background: #fff;
+    }
+
+    .account-info {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .account-info__info .account-info__info__group .account-info__info__label {
+        margin-bottom: 5px;
+    }
+}

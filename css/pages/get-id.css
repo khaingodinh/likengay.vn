@@ -61,3 +61,19 @@
     border: none;
     width: 110px;
 }
+
+@media (max-width: 767px) {
+    .main {
+        background-color: #fff;
+    }
+
+    .get-id {
+        margin: 15px 20px;
+    }
+
+    .get-id .get-id__form {
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+}

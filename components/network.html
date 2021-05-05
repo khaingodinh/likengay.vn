@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="css/pages/network.css">
+<div class="content">
+    <div class="network">
+        <div class="network__header">Chọn nhà mạng</div>
+            <div class="row m-0">
+                <div class="col-4 pl-0">
+                    <div data-branch="viettel" class="network__item j__network__branch selected">
+                        <img class="network__item__selected-icon" width="13" src="images/check-circle.png" alt="">
+                        <div class="network__item__logo">
+                            <img width="106" src="images/viettel.png" alt="">
+                        </div>
+                        <div class="network__item__discount">Chiết khấu 10%</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div data-branch="mobifone" class="network__item j__network__branch">
+                        <div class="network__item__logo">
+                            <img width="109" src="images/mobifone.png" alt="">
+                        </div>
+                        <div class="network__item__discount">Chiết khấu 10%</div>
+                    </div>
+                </div>
+                <div class="col-4 pr-0">
+                    <div data-branch="vinaphone" class="network__item j__network__branch">
+                        <div class="network__item__logo">
+                            <img width="118" src="images/vinaphone.png" alt="">
+                        </div>
+                        <div class="network__item__discount">Chiết khấu 10%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="network__header mt-5">Mệnh giá nạp</div>
+            <div class="row m-0">
+                <div class="col-4 pl-0">
+                    <div class="network__item j__network__amount selected">
+                        <img class="network__item__selected-icon" width="13" src="images/check-circle.png" alt="">
+                        <div class="network__item__amount">10.000đ</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="network__item j__network__amount">
+                        <div class="network__item__amount">20.000đ</div>
+                    </div>
+                </div>
+                <div class="col-4 pr-0">
+                    <div class="network__item j__network__amount">
+                        <div class="network__item__amount">50.000đ</div>
+                    </div>
+                </div>
+                <div class="col-4 pl-0">
+                    <div class="network__item j__network__amount">
+                        <div class="network__item__amount">100.000đ</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="network__item j__network__amount">
+                        <div class="network__item__amount">200.000đ</div>
+                    </div>
+                </div>
+                <div class="col-4 pr-0">
+                    <div class="network__item j__network__amount">
+                        <div class="network__item__amount">500.000đ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <div class="network__input">
+                    <span>Số Seri</span>
+                    <input required name="seri" type="text"/>
+                </div>
+                <div class="network__input">
+                    <span>Mã thẻ</span>
+                    <input required name="code" type="text"/>
+                </div>
+            </div>
+            <div class="network__total">
+                <span>Tổng tiền:</span>
+                <span class="network__total__amount">20.000đ</span>
+            </div>
+            <button class="network__submit-btn">Nạp tiền</button>
+        </div>
+        <div class="row m-0">
+            <div class="recharge__warning">
+                <div class="recharge__warning__header">Chú ý:</div>
+                <div class="recharge__warning__content">
+                    <ul class="m-0">
+                        <li>Nạp sai cú pháp hoặc sai số tài khoản sẽ bị trừ 10% phí giao dịch. tối đa trừ 50.000 Coin. Ví dụ nạp sai 100.000
+                            trừ 10.000, 200.000 trừ 20.000, 500.000 trừ 50.000, 1 triệu trừ 50.000, 10 triệu trừ 50.000...</li>
+                        <li>Số tiền chuyển khoản tối thiểu 1 lần là 10.000 VNĐ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0">
+            <button id="history-btn" class="network__history-btn">Nhật ký nạp tiền</button>
+        </div>
+    </div>
+    <div class="right-menu">
+    </div>
+</div>
+<script src="js/pages/network.js"></script>

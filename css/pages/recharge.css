@@ -10,6 +10,14 @@
     padding: 15px 10px;
 }
 
+.recharge .recharge__vietcombank {
+    padding-left: 0;
+}
+
+.recharge .recharge__momo {
+    padding-right: 0;
+}
+
 .recharge .recharge__header {
     font-family: Arial;
     font-style: normal;
@@ -165,4 +173,56 @@
     color: #FFFFFF;
     padding: 7px 0;
     display: block;
+}
+
+.recharge .j-recharge__vietcombank,
+.recharge .j-recharge__momo {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .recharge .j-recharge__vietcombank,
+    .recharge .j-recharge__momo {
+        display: inline-block;
+    }
+
+    .recharge .recharge__vietcombank,
+    .recharge .recharge__momo {
+        padding: 0;
+        display: block;
+    }
+
+    .recharge .j-recharge__vietcombank.selected img,
+    .recharge .j-recharge__momo.selected img {
+        border: 1px solid red;
+        border-radius: 11px;
+    }
+
+    .recharge .recharge__logo__pc {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        background-color: #fff;
+    }
+
+    .recharge {
+        padding: 0 15px;
+    }
+
+    .recharge .recharge__col {
+        box-shadow: none;
+    }
+
+    .recharge .recharge__momo {
+        display: none;
+    }
+
+    .recharge .recharge__warning {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
 }

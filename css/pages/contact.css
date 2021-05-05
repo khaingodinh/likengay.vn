@@ -68,3 +68,32 @@
     line-height: 14px;
     color: #F04C24;
 }
+
+@media (max-width: 1280px) {
+    .content-wrapper .content {
+        max-width: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+        background-color: #FFF;
+    }
+
+    .contact {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .contact .contact__name {
+        display: none;
+    }
+
+    .contact .contact__icon {
+        margin-bottom: 10px;
+    }
+
+    .contact__warning {
+        margin: 0 20px;
+    }
+}

@@ -45,3 +45,28 @@
     text-align: justify;
     color: #000000;
 }
+
+@media (max-width: 767px) {
+    .main {
+        background-color: #fff;
+    }
+
+    .guide .guide__section {
+        box-shadow: none;
+    }
+
+    .guide .guide__header {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .get-id .get-id__header {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .guide .guide__text {
+        font-size: 10px;
+        line-height: 11px;
+    }
+}

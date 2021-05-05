@@ -185,3 +185,41 @@
     padding: 7px 0;
     display: block;
 }
+
+.like-fanpage__history-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .main {
+        background-color: #fff;
+    }
+
+    .like-fanpage .like-fanpage__form {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .like-fanpage__warning {
+        margin: 0 29px;
+    }
+
+    .like-fanpage__history-btn {
+        display: block;
+        background: #FFFFFF;
+        border: 1px solid #F04C24;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #F04C24;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        margin: 0 29px;
+        padding: 9px 0;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}

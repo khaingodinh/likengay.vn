@@ -186,6 +186,7 @@ a, a:hover {
 .content-wrapper .content {
     max-width: 670px;
     margin: 0 auto;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1280px) {

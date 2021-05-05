@@ -37,6 +37,7 @@
 .transaction-history .transaction-history__filter {
     margin-left: auto;
     position: relative;
+    display: flex;
 }
 
 .transaction-history .transaction-history__filter .table-filter {
@@ -112,4 +113,34 @@
 
 .transaction-history table tr td .yellow-text {
     color: #ff8a00;
+}
+
+@media (max-width: 767px) {
+    .transaction-history {
+        border-radius: 0px;
+    }
+
+    .transaction-history table {
+        width: 560px;
+    }
+
+    .transaction-history .transaction-history__search input {
+        width: 100%;
+    }
+
+    .transaction-history .transaction-history__search {
+        width: 100%;
+    }
+
+    .transaction-history {
+        width: 100%;
+    }
+
+    .transaction-history span {
+        width: 90px;
+    }
+
+    .transaction-history .transaction-history__filter {
+        display: none;
+    }
 }

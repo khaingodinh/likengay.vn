@@ -1,11 +1,18 @@
+<link rel="stylesheet" href="css/pages/recharge.css">
 <div class="content">
     <div class="recharge">
         <div class="row m-0">
-            <div class="col-sm-6 col-xs-12 pl-0">
+            <div class="col-xl-6 col-sm-12 col-12 recharge__vietcombank">
                 <div class="recharge__col">
                     <div class="recharge__header">Nạp tiền qua Vietcombank</div>
                     <div class="recharge__logo text-center">
-                        <img width="55" src="images/vietcombank.png" alt="">
+                        <a class="j-recharge__vietcombank selected" href="javascript:;">
+                            <img width="55" src="images/vietcombank.png" alt="">
+                        </a>
+                        <a class="j-recharge__momo" href="javascript:;">
+                            <img width="55" src="images/momo.png" alt="">
+                        </a>
+                        <img class="recharge__logo__pc" width="55" src="images/vietcombank.png" alt="">
                     </div>
                     <div class="recharge__qr text-center">
                         <img width="205" src="images/qr.png" alt="">
@@ -36,11 +43,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-xs-12 pr-0">
+            <div class="col-xl-6 col-sm-12 col-12 recharge__momo">
                 <div class="recharge__col">
                     <div class="recharge__header">Nạp tiền qua Momo</div>
                     <div class="recharge__logo text-center">
-                        <img width="55" src="images/momo.png" alt="">
+                        <a class="j-recharge__vietcombank" href="javascript:;">
+                            <img width="55" src="images/vietcombank.png" alt="">
+                        </a>
+                        <a class="j-recharge__momo selected" href="javascript:;">
+                            <img width="55" src="images/momo.png" alt="">
+                        </a>
+                        <img class="recharge__logo__pc" width="55" src="images/momo.png" alt="">
                     </div>
                     <div class="recharge__qr text-center">
                         <img width="205" src="images/qr.png" alt="">
@@ -180,3 +193,4 @@
         </a>
     </div>
 </div>
+<script src="js/pages/recharge.js"></script>
