@@ -27,13 +27,20 @@ $(document).on('click', '#amount_filter_select ul li', function() {
 });
 
 $('#menu-sp').click(function() {
-    $('.content-wrapper').hide();
-    $('.right-menu').removeAttr('style');
-    $('.left-menu')
-        .css('width', '100%')
-        .css('background-color', '#fff')
-        .css('padding-left', '20px')
-        .css('display', 'block');
+    if (!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $('.content-wrapper').hide();
+        $('.right-menu').removeAttr('style');
+        $('.left-menu')
+            .css('width', '100%')
+            .css('background-color', '#fff')
+            .css('padding-left', '20px')
+            .css('display', 'block');
+    } else {
+        $(this).removeClass('active');
+        $('.left-menu').removeAttr('style');
+        $('.content-wrapper').show();
+    }
 });
 
 $('.j-currency').click(function() {
