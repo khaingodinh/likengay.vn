@@ -113,6 +113,27 @@
     color: #F04C24;
 }
 
+.like-fanpage__form__processing {
+    width: 100%;
+}
+
+.like-fanpage__form__processing span {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-fanpage__form__processing img {
+    width: 97px;
+}
+
 /* =========NETWORK-like-fanpage-HISTORY======== */
 .like-fanpage-history {
     margin-bottom: 50px;
@@ -222,4 +243,8 @@
         margin-bottom: 30px;
         margin-top: 20px;
     }
+
+    .like-fanpage__form__processing img {
+        width: 69px;
+    }    
 }
