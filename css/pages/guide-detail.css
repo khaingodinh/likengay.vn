@@ -29,3 +29,16 @@
 .guide-detail .img-fluid {
     max-width: 60%;
 }
+
+@media (max-width: 767px) {
+    .guide-detail {
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 22px 29px;
+    }    
+
+    .guide-detail .img-fluid {
+        max-width: 100%;
+    }
+}

@@ -105,76 +105,6 @@
     color: #F04C24;
 }
 
-/* =========RECHARGE-HISTORY======== */
-.recharge-history {
-    margin-bottom: 50px;
-}
-
-.recharge-history .recharge-history__header {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    color: #F04C24;
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-.recharge-history .recharge-history__item {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #CACACA;
-    margin-bottom: 9px;
-}
-
-.recharge-history .recharge-history__item .recharge-history__item__header {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #3F3F3F;
-    margin-bottom: 2px;
-}
-
-.recharge-history .recharge-history__item .recharge-history__item__info {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
-    color: #3F3F3F;
-    margin-bottom: 2px;
-}
-
-.recharge-history .recharge-history__item .recharge-history__item__price {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3F3F3F;
-    margin-left: auto;
-}
-
-.recharge-history .recharge-history__item .recharge-history__item__price .history__item__price__currency {
-    font-size: 10px;
-}
-
-.recharge-history .recharge-history__loadmore {
-    background: #F04C24;
-    border-radius: 5px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 7px 0;
-    display: block;
-}
-
 .recharge .j-recharge__vietcombank,
 .recharge .j-recharge__momo {
     display: none;
@@ -203,6 +133,10 @@
     }
 }
 
+.recharge .recharge__history-btn {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .main {
         background-color: #fff;
@@ -224,5 +158,24 @@
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .recharge .recharge__history-btn {
+        display: block;
+        background: #FFFFFF;
+        border: 1px solid #F04C24;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #F04C24;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        margin: 0 10px;
+        padding: 9px 0;
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
