@@ -76,6 +76,7 @@ a, a:hover {
     align-items: center;
     width: 310px;
     margin-left: auto;
+    position: relative;
 }
 
 .header__profile__avatar {
@@ -101,6 +102,45 @@ a, a:hover {
     justify-content: center;
     align-items: center;
     margin: 0 6px;
+}
+
+.header__profile__menu.active {
+    background: #FFD9CF;
+}
+
+.header__profile__list__menu {
+    position: absolute;
+    right: 0;
+    top: 74px;
+    background: #fff;
+    padding: 16px 14px;
+    box-shadow: 0px 1px 4px 1px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+}
+
+.header__profile__menu__info {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.header__profile__menu__info img {
+    margin-right: 17px;
+}
+
+.header__profile__menu__logout {
+    display: flex;
+    align-items: center;
+}
+
+.header__profile__menu__logout-icon {
+    background: #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    margin-right: 16px;
 }
 
 /* ========MAIN=========== */

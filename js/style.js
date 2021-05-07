@@ -10,6 +10,13 @@ $(document).click(function(e) {
             $('.amount-filer-items').css('display', 'none');
         }
     }
+
+    if (e.target.id != 'j_profile' && e.target.id != 'j_profile_img') {
+        if ($('.j-profile').hasClass('active')) {
+            $('.j-profile').removeClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">');
+            $('.header__profile__list__menu').hide();
+        }
+    }
 });
 
 $(document).on('click' , '#amount_filter', function() {
@@ -70,11 +77,21 @@ $('.j-guide').click(function() {
     $('#container').load("components/guide.html");
 });
 
-$('.j-account').click(function() {
+$('.j-account, .header__profile__menu__info').click(function() {
     $('.left-menu').removeAttr('style');
     $('.content-wrapper').show();
     $('.content').show();
     $('#container').load("components/account-info.html");
+});
+
+$(document).on('click' , '#j_profile', function() {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">');
+        $('.header__profile__list__menu').hide();
+    } else {
+        $(this).addClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down-orange.png" alt="">');
+        $('.header__profile__list__menu').show();
+    }
 });
 
 window.isMobile = function() {

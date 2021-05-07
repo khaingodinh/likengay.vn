@@ -7,7 +7,7 @@
     <title>LikeNgay.VN</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
     <link rel="stylesheet" href="css/pages/top.css">
 </head>
 <body>
@@ -54,9 +54,24 @@
             <a href="javascript:;" class="header__profile__menu j-guide">
                 <img width="12" src="images/question-mark.png" alt="">
             </a>
-            <a href="#" class="header__profile__menu">
-                <img width="22" src="images/caret-down.png" alt="">
+            <a id="j_profile" href="javascript:;" class="header__profile__menu j-profile">
+                <img id="j_profile_img" width="22" src="images/caret-down.png" alt="">
             </a>
+            <div style="display: none;" class="header__profile__list__menu">
+                <a class="header__profile__menu__info" href="javascript:;">
+                    <img width="47" src="images/avatar.png" alt="">
+                    <div class="d-flex flex-column">
+                        <span><strong>Lê Anh Tuấn</strong></span>
+                        <span>Xem thông tin của bạn</span>
+                    </div>
+                </a>
+                <a class="header__profile__menu__logout" href="javascript:;">
+                    <div class="header__profile__menu__logout-icon">
+                        <img width="24" src="images/logout.png" alt="">
+                    </div>
+                    <span><strong>Đăng xuất</strong></span>
+                </a>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -475,6 +490,6 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/style.js?v=1.1"></script>
+    <script src="js/style.js?v=1.2"></script>
 </body>
 </html>
