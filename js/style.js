@@ -17,6 +17,14 @@ $(document).click(function(e) {
             $('.header__profile__list__menu').hide();
         }
     }
+
+    if (e.target.id != 'menu-sp' && e.target.id != 'menu-sp__img') {
+        if ($('#menu-sp').hasClass('active')) {
+            $('#menu-sp').removeClass('active');
+            $('.left-menu').removeAttr('style');
+            $('.content-wrapper').show();
+        }
+    }
 });
 
 $(document).on('click' , '#amount_filter', function() {
