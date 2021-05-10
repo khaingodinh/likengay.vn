@@ -55,6 +55,10 @@
     color: #F04C24;
 }
 
+.account-info__logout {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .main {
         background: #fff;
@@ -62,6 +66,33 @@
 
     .account-info {
         box-shadow: none;
+    }
+
+    .account-info__logout {
+        display: block;
+        background: #F04C24;
+        border-radius: 5px;
+        width: 100%;
+        padding: 7px 0;
+        text-align: center;
+        margin-top: 26px;
+    }
+
+    .account-info__logout a {
+        display: flex;
+        color: #fff;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .account-info__logout a img {
+        margin-right: 5px;
     }
 }
 

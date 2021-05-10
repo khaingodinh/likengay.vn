@@ -4,6 +4,29 @@ $(document).ready(function() {
 })
 
 $(document).click(function(e) {
+    if ($(e.target).parents('#left-menu').length > 0 ||
+    $(e.target).parents('.right-menu').length > 0 ||
+    e.target.id == 'menu-sp' ||
+    e.target.id == 'menu-sp__img' ||
+    e.target.id == 'j-currency' ||
+    e.target.id == 'j-currency__img') {
+        // ignore
+    } else {
+        if ($('#menu-sp').hasClass('active')) {
+            $('#menu-sp').removeClass('active');
+            $('.left-menu').removeAttr('style');
+            $('.content-wrapper').show();
+            $('.content').show();
+        }
+
+        if ($('#j-currency').hasClass('active')) {
+            $('#j-currency').removeClass('active')
+            $('.right-menu').removeAttr('style');
+            $('.content-wrapper').show();
+            $('.content').show();
+        }
+    }
+
     if (e.target.id != 'amount_filter' && $(e.target).parents('#amount_filter').length == 0) {
         if ($('#amount_filter').hasClass('selected')) {
             $('#amount_filter').removeClass('selected');
@@ -15,14 +38,6 @@ $(document).click(function(e) {
         if ($('.j-profile').hasClass('active')) {
             $('.j-profile').removeClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">');
             $('.header__profile__list__menu').hide();
-        }
-    }
-
-    if (e.target.id != 'menu-sp' && e.target.id != 'menu-sp__img') {
-        if ($('#menu-sp').hasClass('active')) {
-            $('#menu-sp').removeClass('active');
-            $('.left-menu').removeAttr('style');
-            $('.content-wrapper').show();
         }
     }
 });
@@ -45,7 +60,8 @@ $('#menu-sp').click(function() {
     if (!$(this).hasClass('active')) {
         $(this).addClass('active');
         $('.content-wrapper').hide();
-        $('.right-menu').removeAttr('style');
+        $('.right-menu').removeAttr('style').hide();
+        $('#j-currency').removeClass('active')
         $('.left-menu')
             .css('width', '100%')
             .css('background-color', '#fff')
@@ -55,22 +71,34 @@ $('#menu-sp').click(function() {
         $(this).removeClass('active');
         $('.left-menu').removeAttr('style');
         $('.content-wrapper').show();
+        $('.content').show();
     }
 });
 
-$('.j-currency').click(function() {
-    $('.content').hide();
-    $('.left-menu').removeAttr('style');
-    $('.right-menu')
-        .css('width', '100%')
-        .css('padding', '15px')
-        .css('margin', '0')
-        .css('background-color', '#fff')
-        .css('display', 'block')
-        .load('components/account-balance.html');
+$('#j-currency').click(function() {
+    if (!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $('#menu-sp').removeClass('active');
+        $('.content-wrapper').show();
+        $('.content').hide();
+        $('.left-menu').removeAttr('style').hide();
+        $('.right-menu')
+            .css('width', '100%')
+            .css('padding', '15px')
+            .css('margin', '0')
+            .css('background-color', '#fff')
+            .css('display', 'block')
+            .load('components/account-balance.html');
+    } else {
+        $(this).removeClass('active');
+        $('.right-menu').removeAttr('style');
+        $('.content-wrapper').show();
+        $('.content').show();
+    }
 });
 
 $('.left-menu .sub-menu-item a').click(function() {
+    $('#menu-sp').removeClass('active');
     $('.left-menu').removeAttr('style');
     $('.content-wrapper').show();
     $('.content').show();
