@@ -6,10 +6,13 @@ $(document).ready(function() {
 $(document).click(function(e) {
     if ($(e.target).parents('#left-menu').length > 0 ||
     $(e.target).parents('.right-menu').length > 0 ||
+    $(e.target).parents('.notification').length > 0 ||
     e.target.id == 'menu-sp' ||
     e.target.id == 'menu-sp__img' ||
     e.target.id == 'j-currency' ||
-    e.target.id == 'j-currency__img') {
+    e.target.id == 'j-currency__img' ||
+    e.target.id == 'j-bell' ||
+    e.target.id == 'j-bell__img') {
         // ignore
     } else {
         if ($('#menu-sp').hasClass('active')) {
@@ -22,6 +25,13 @@ $(document).click(function(e) {
         if ($('#j-currency').hasClass('active')) {
             $('#j-currency').removeClass('active')
             $('.right-menu').removeAttr('style');
+            $('.content-wrapper').show();
+            $('.content').show();
+        }
+
+        if ($('#j-bell').hasClass('active')) {
+            $('#j-bell').removeClass('active')
+            $('#notification').hide();
             $('.content-wrapper').show();
             $('.content').show();
         }
@@ -38,6 +48,13 @@ $(document).click(function(e) {
         if ($('.j-profile').hasClass('active')) {
             $('.j-profile').removeClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">');
             $('.header__profile__list__menu').hide();
+        }
+    }
+
+    if (e.target.id != 'j_notification' && e.target.id != 'j_notification__img') {
+        if ($('#j_notification').hasClass('active')) {
+            $('#j_notification').removeClass('active').html('<img id="j_notification__img" width="28" src="images/bell.png" alt="">');
+            $('.header__profile__notification').hide();
         }
     }
 });
@@ -57,11 +74,13 @@ $(document).on('click', '#amount_filter_select ul li', function() {
 });
 
 $('#menu-sp').click(function() {
+    $('#j-bell').removeClass('active');
+    $('#notification').hide();
     if (!$(this).hasClass('active')) {
         $(this).addClass('active');
         $('.content-wrapper').hide();
         $('.right-menu').removeAttr('style').hide();
-        $('#j-currency').removeClass('active')
+        $('#j-currency').removeClass('active');
         $('.left-menu')
             .css('width', '100%')
             .css('background-color', '#fff')
@@ -76,6 +95,8 @@ $('#menu-sp').click(function() {
 });
 
 $('#j-currency').click(function() {
+    $('#j-bell').removeClass('active');
+    $('#notification').hide();
     if (!$(this).hasClass('active')) {
         $(this).addClass('active');
         $('#menu-sp').removeClass('active');
@@ -120,6 +141,24 @@ $('.j-account, .header__profile__menu__info').click(function() {
     $('#container').load("components/account-info.html");
 });
 
+$('#j-bell').click(function (){
+    $('#j-currency').removeClass('active');
+    $('#menu-sp').removeClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('#notification').hide();
+        $('.content-wrapper').show();
+        $('.content').show();
+    } else {
+        $(this).addClass('active');
+        $('#notification').show();
+        $('.right-menu').removeAttr('style');
+        $('.left-menu').removeAttr('style');
+        $('.content-wrapper').hide();
+        $('.content').hide();
+    }
+});
+
 $(document).on('click' , '#j_profile', function() {
     if ($(this).hasClass('active')) {
         $(this).removeClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">');
@@ -127,6 +166,16 @@ $(document).on('click' , '#j_profile', function() {
     } else {
         $(this).addClass('active').html('<img id="j_profile_img" width="22" src="images/caret-down-orange.png" alt="">');
         $('.header__profile__list__menu').show();
+    }
+});
+
+$(document).on('click' , '#j_notification', function() {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active').html('<img id="j_notification__img" width="28" src="images/bell.png" alt="">');
+        $('.header__profile__notification').hide();
+    } else {
+        $(this).addClass('active').html('<img id="j_notification__img" width="28" src="images/bell-orange.png" alt="">');
+        $('.header__profile__notification').show();
     }
 });
 

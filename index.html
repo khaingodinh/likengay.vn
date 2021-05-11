@@ -7,7 +7,7 @@
     <title>LikeNgay.VN</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/style.css?v=1.2">
     <link rel="stylesheet" href="css/pages/top.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="header-sp__top__menu">
                     <ul>
-                        <li><a href="#"><img width="26" src="images/bell-icon.png" alt=""></a></li>
+                        <li><a id="j-bell" href="javascript:;"><img id="j-bell__img" width="26" src="images/bell-icon.png" alt=""></a></li>
                         <li><a class="j-guide" href="#"><img width="26" src="images/question-icon.png" alt=""></a></li>
                         <li><a id="j-currency" class="j-currency" href="javascript:;"><img id="j-currency__img" width="26" src="images/currency-icon.png" alt=""></a></li>
                     </ul>
@@ -48,8 +48,8 @@
                 <img class="header__profile__avatar" src="images/avatar.png" alt="">
             </a> 
             <div class="header__profile__name">Lê Anh Tuấn</div>
-            <a href="#" class="header__profile__menu">
-                <img width="28" src="images/bell.png" alt="">
+            <a id="j_notification" href="javascript:;" class="header__profile__menu">
+                <img id="j_notification__img" width="28" src="images/bell.png" alt="">
             </a>
             <a href="javascript:;" class="header__profile__menu j-guide">
                 <img width="12" src="images/question-mark.png" alt="">
@@ -57,6 +57,47 @@
             <a id="j_profile" href="javascript:;" class="header__profile__menu j-profile">
                 <img id="j_profile_img" width="22" src="images/caret-down.png" alt="">
             </a>
+            <div style="display: none;" class="header__profile__notification">
+                <div class="header__profile__notification__title">Thông báo</div>
+                <ul class="header__profile__notification__list">
+                    <li>
+                        <a class="d-flex active" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa hoàn tiền id 1000003024 like fanpage với số tiền 3333000 coin cho bạn</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex active" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div style="display: none;" class="header__profile__list__menu">
                 <a class="header__profile__menu__info" href="javascript:;">
                     <img width="47" src="images/avatar.png" alt="">
@@ -487,9 +528,52 @@
             <div id="right-menu" class="right-menu">
             </div>
         </div>
+        <div style="display: none;" id="notification" class="notification">
+            <div class="header__profile__notification">
+                <div class="header__profile__notification__title">Thông báo</div>
+                <ul class="header__profile__notification__list">
+                    <li>
+                        <a class="d-flex active" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa hoàn tiền id 1000003024 like fanpage với số tiền 3333000 coin cho bạn</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex active" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex" href="#">
+                            <img src="images/avatar.png" alt="">
+                            <div class="header__profile__notification__item">
+                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+                                <div class="header__profile__notification__item__time">5 phút trước</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/style.js?v=1.4"></script>
+    <script src="js/style.js?v=1.5"></script>
 </body>
 </html>
