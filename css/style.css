@@ -34,6 +34,13 @@ a, a:hover {
     width: 100%;
     background-color: #fff;
     z-index: 9999;
+	justify-content: center;
+}
+
+.header__wrapper {
+	display: flex;
+    width: 100%;
+    max-width: 1300px;
 }
 
 .header__logo-wrapper {
@@ -212,11 +219,18 @@ a, a:hover {
     display: flex;
     flex-direction: row;
     padding: 115px 60px 24px;
+	justify-content: center;
+}
+
+.main .main__wrapper {
+	display: flex;
+    width: 100%;
+    max-width: 1300px;
 }
 
 /* =========LEFT-MENU=========== */
 .left-menu {
-    width: 450px;
+    width: 370px;
 }
 
 .left-menu ul.menu-item {
@@ -364,7 +378,12 @@ a, a:hover {
         padding: 125px 0 0;
     }
 
-    .header {
+	.header {
+		padding: 0;
+	}
+
+    .header__wrapper {
+		padding: 15px;
         background-color: #F04C24;
         width: 100%;
         flex-direction: column;

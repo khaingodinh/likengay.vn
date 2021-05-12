@@ -7,528 +7,531 @@
     <title>LikeNgay.VN</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
     <link rel="stylesheet" href="css/pages/top.css">
 </head>
 <body>
     <div class="header">
-        <div class="header-sp">
-            <div class="header-sp__top">
-                <a id="menu-sp" class="d-flex align-items-center" href="javascript:;">
-                    <img id="menu-sp__img" width="24" src="images/menu-icon.png" alt="">
-                </a>
-                <a class="d-flex align-items-center ml-2 j-account" href="#">
-                    <img width="26" src="images/avatar.png" alt="">
-                </a>
-                <div class="header-sp__top__logo">
-                    <a href="index.html">
-                        <img width="65" src="images/logo-white.png" alt="">
-                    </a>
-                </div>
-                <div class="header-sp__top__menu">
-                    <ul>
-                        <li><a id="j-bell" href="javascript:;"><img id="j-bell__img" width="26" src="images/bell-icon.png" alt=""></a></li>
-                        <li><a class="j-guide" href="#"><img width="26" src="images/question-icon.png" alt=""></a></li>
-                        <li><a id="j-currency" class="j-currency" href="javascript:;"><img id="j-currency__img" width="26" src="images/currency-icon.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header__logo-wrapper">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
-        </div>
-        <div class="header__search">
-            <div class="header__search__group d-flex align-items-center">
-                <img src="images/search-icon.png" alt="">
-                <input placeholder="Tìm kiếm trên LIKENGAY.VN" name="input_search" type="text">
-            </div>
-        </div>
-        <div class="header__profile">
-            <a class="j-account" href="javascript:;">
-                <img class="header__profile__avatar" src="images/avatar.png" alt="">
-            </a> 
-            <div class="header__profile__name">Lê Anh Tuấn</div>
-            <a id="j_notification" href="javascript:;" class="header__profile__menu">
-                <img id="j_notification__img" width="28" src="images/bell.png" alt="">
-            </a>
-            <a href="javascript:;" class="header__profile__menu j-guide">
-                <img width="12" src="images/question-mark.png" alt="">
-            </a>
-            <a id="j_profile" href="javascript:;" class="header__profile__menu j-profile">
-                <img id="j_profile_img" width="22" src="images/caret-down.png" alt="">
-            </a>
-            <div style="display: none;" class="header__profile__notification">
-                <div class="header__profile__notification__title">Thông báo</div>
-                <ul class="header__profile__notification__list">
-                    <li>
-                        <a class="d-flex active" href="#">
-                            <img src="images/avatar.png" alt="">
-                            <div class="header__profile__notification__item">
-                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
-                                <div class="header__profile__notification__item__time">5 phút trước</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-flex" href="#">
-                            <img src="images/avatar.png" alt="">
-                            <div class="header__profile__notification__item">
-                                <div class="header__profile__notification__item__content">ADMIN vừa hoàn tiền id 1000003024 like fanpage với số tiền 3333000 coin cho bạn</div>
-                                <div class="header__profile__notification__item__time">5 phút trước</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-flex active" href="#">
-                            <img src="images/avatar.png" alt="">
-                            <div class="header__profile__notification__item">
-                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
-                                <div class="header__profile__notification__item__time">5 phút trước</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="d-flex" href="#">
-                            <img src="images/avatar.png" alt="">
-                            <div class="header__profile__notification__item">
-                                <div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
-                                <div class="header__profile__notification__item__time">5 phút trước</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div style="display: none;" class="header__profile__list__menu">
-                <a class="header__profile__menu__info" href="javascript:;">
-                    <img width="47" src="images/avatar.png" alt="">
-                    <div class="d-flex flex-column">
-                        <span><strong>Lê Anh Tuấn</strong></span>
-                        <span>Xem thông tin của bạn</span>
-                    </div>
-                </a>
-                <a class="header__profile__menu__logout" href="javascript:;">
-                    <div class="header__profile__menu__logout-icon">
-                        <img width="24" src="images/logout.png" alt="">
-                    </div>
-                    <span><strong>Đăng xuất</strong></span>
-                </a>
-            </div>
-        </div>
+		<div class="header__wrapper">
+			<div class="header-sp">
+				<div class="header-sp__top">
+					<a id="menu-sp" class="d-flex align-items-center" href="javascript:;">
+						<img id="menu-sp__img" width="24" src="images/menu-icon.png" alt="">
+					</a>
+					<a class="d-flex align-items-center ml-2 j-account" href="#">
+						<img width="26" src="images/avatar.png" alt="">
+					</a>
+					<div class="header-sp__top__logo">
+						<a href="index.html">
+							<img width="65" src="images/logo-white.png" alt="">
+						</a>
+					</div>
+					<div class="header-sp__top__menu">
+						<ul>
+							<li><a id="j-bell" href="javascript:;"><img id="j-bell__img" width="26" src="images/bell-icon.png" alt=""></a></li>
+							<li><a class="j-guide" href="#"><img width="26" src="images/question-icon.png" alt=""></a></li>
+							<li><a id="j-currency" class="j-currency" href="javascript:;"><img id="j-currency__img" width="26" src="images/currency-icon.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__logo-wrapper">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="header__search">
+				<div class="header__search__group d-flex align-items-center">
+					<img src="images/search-icon.png" alt="">
+					<input placeholder="Tìm kiếm trên LIKENGAY.VN" name="input_search" type="text">
+				</div>
+			</div>
+			<div class="header__profile">
+				<a class="j-account" href="javascript:;">
+					<img class="header__profile__avatar" src="images/avatar.png" alt="">
+				</a> 
+				<div class="header__profile__name">Lê Anh Tuấn</div>
+				<a id="j_notification" href="javascript:;" class="header__profile__menu">
+					<img id="j_notification__img" width="28" src="images/bell.png" alt="">
+				</a>
+				<a href="javascript:;" class="header__profile__menu j-guide">
+					<img width="12" src="images/question-mark.png" alt="">
+				</a>
+				<a id="j_profile" href="javascript:;" class="header__profile__menu j-profile">
+					<img id="j_profile_img" width="22" src="images/caret-down.png" alt="">
+				</a>
+				<div style="display: none;" class="header__profile__notification">
+					<div class="header__profile__notification__title">Thông báo</div>
+					<ul class="header__profile__notification__list">
+						<li>
+							<a class="d-flex active" href="#">
+								<img src="images/avatar.png" alt="">
+								<div class="header__profile__notification__item">
+									<div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+									<div class="header__profile__notification__item__time">5 phút trước</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex" href="#">
+								<img src="images/avatar.png" alt="">
+								<div class="header__profile__notification__item">
+									<div class="header__profile__notification__item__content">ADMIN vừa hoàn tiền id 1000003024 like fanpage với số tiền 3333000 coin cho bạn</div>
+									<div class="header__profile__notification__item__time">5 phút trước</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex active" href="#">
+								<img src="images/avatar.png" alt="">
+								<div class="header__profile__notification__item">
+									<div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+									<div class="header__profile__notification__item__time">5 phút trước</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="d-flex" href="#">
+								<img src="images/avatar.png" alt="">
+								<div class="header__profile__notification__item">
+									<div class="header__profile__notification__item__content">ADMIN vừa đăng bài viết mới</div>
+									<div class="header__profile__notification__item__time">5 phút trước</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div style="display: none;" class="header__profile__list__menu">
+					<a class="header__profile__menu__info" href="javascript:;">
+						<img width="47" src="images/avatar.png" alt="">
+						<div class="d-flex flex-column">
+							<span><strong>Lê Anh Tuấn</strong></span>
+							<span>Xem thông tin của bạn</span>
+						</div>
+					</a>
+					<a class="header__profile__menu__logout" href="javascript:;">
+						<div class="header__profile__menu__logout-icon">
+							<img width="24" src="images/logout.png" alt="">
+						</div>
+						<span><strong>Đăng xuất</strong></span>
+					</a>
+				</div>
+			</div>
+		</div>
     </div>
     <div class="main">
-        <div id="left-menu" class="left-menu">
-            <ul id="menu" class="menu-item">
-                <li>
-                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#menu1" aria-expanded="false" aria-controls="menu1">
-                        <div class="left-menu__img">
-                            <img src="images/menu-1.png" alt="">
-                        </div>
-                        <span>Tài khoản</span>
-                    </a>
-                    <ul id="menu1" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a data-menu="recharge" href="javascript:;">
-                                <img width="17" src="images/account-submenu-1.png" alt="">
-                                <span class="sub-menu-item__name">Nạp tiền tự động</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="network" href="javascript:;">
-                                <img width="17" src="images/account-submenu-2.png" alt="">
-                                <span class="sub-menu-item__name">Nạp tiền bằng thẻ cào</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="transaction" href="#">
-                                <img width="17" src="images/account-submenu-3.png" alt="">
-                                <span class="sub-menu-item__name">Lịch sử giao dịch</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="get-id" href="#">
-                                <img width="17" src="images/account-submenu-4.png" alt="">
-                                <span class="sub-menu-item__name">Lấy ID</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="contact" href="javascript:;">
-                                <img width="17" src="images/account-submenu-5.png" alt="">
-                                <span class="sub-menu-item__name">Liên hệ hỗ trợ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#menu2" aria-expanded="false" aria-controls="menu2">
-                        <div class="left-menu__img">
-                            <img src="images/menu-2.png" alt="">
-                        </div>
-                        <span>Like Fanpage</span>
-                    </a>
-                    <ul id="menu2" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a data-menu="like-fanpage" href="#">
-                                <img width="17" src="images/menu-2.png" alt="">
-                                <span class="sub-menu-item__name">Like Page 1 (Duyệt Tay)</span>
-                                <div class="sub-menu-item__hot">
-                                    <img width="17" src="images/hot.png" alt="">
-                                    <span>HOT</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="like-fanpage" href="#">
-                                <img width="17" src="images/menu-2.png" alt="">
-                                <span class="sub-menu-item__name">Like Page 2 (fsub.lebooks.me)</span>
-                                <div class="sub-menu-item__hot">
-                                    <img width="17" src="images/sale.png" alt="">
-                                    <span>SALE</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a data-menu="like-fanpage" href="#">
-                                <img width="17" src="images/menu-2.png" alt="">
-                                <span class="sub-menu-item__name">Like Page 3 (autofb88)</span>
-                                <div class="sub-menu-item__hot">
-                                    <img width="17" src="images/maintaince.png" alt="">
-                                    <span>BẢO TRÌ</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-3.png" alt="">
-                        </div>
-                        <span>Đổi Tên Fanpage</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="collapsed" data-toggle="collapse" data-target="#menu3" aria-expanded="false" aria-controls="menu3">
-                        <div class="left-menu__img">
-                            <img src="images/menu-4.png" alt="">
-                        </div>
-                        <span>Like Post</span>
-                    </a>
-                    <ul id="menu3" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-4.png" alt="">
-                                <span class="sub-menu-item__name">Like Post 1 (traodoisub.com)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-4.png" alt="">
-                                <span class="sub-menu-item__name">Like Post 2 (autofb88.com)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-4.png" alt="">
-                                <span class="sub-menu-item__name">Like Post 3 (autofb88.com)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-4.png" alt="">
-                                <span class="sub-menu-item__name">Like Post Bấm Tay (autofb88.com)</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" data-toggle="collapse" data-target="#menu4" aria-expanded="false" aria-controls="menu4">
-                        <div class="left-menu__img">
-                            <img src="images/menu-5.png" alt="">
-                        </div>
-                        <span>Tăng Folows</span>
-                    </a>
-                    <ul id="menu4" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-5.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Folows 1 (fsub.lebooks.me)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-5.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Folows 2 (sv5 autofb88.com)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-5.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Folows 3 (sv6 autofb88.com)</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-6.png" alt="">
-                        </div>
-                        <span>Like Fanpage</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="collapse" data-target="#menu5" aria-expanded="false" aria-controls="menu5">
-                        <div class="left-menu__img">
-                            <img src="images/menu-7.png" alt="">
-                        </div>
-                        <span>VIP Like</span>
-                    </a>
-                    <ul id="menu5" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-7.png" alt="">
-                                <span class="sub-menu-item__name">VIP Like Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-7.png" alt="">
-                                <span class="sub-menu-item__name">VIP Like Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-7.png" alt="">
-                                <span class="sub-menu-item__name">VIP Comment Facebook</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-8.png" alt="">
-                        </div>
-                        <span>Tăng Share Live Group</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-9.png" alt="">
-                        </div>
-                        <span>Buff Comment</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-10.png" alt="">
-                        </div>
-                        <span>VIP Comment</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-11.png" alt="">
-                        </div>
-                        <span>Tăng mắt, view</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="collapse" data-target="#menu6" aria-expanded="false" aria-controls="menu6">
-                        <div class="left-menu__img">
-                            <img src="images/menu-12.png" alt="">
-                        </div>
-                        <span>Dịch Vụ Instagram</span>
-                    </a>
-                    <ul id="menu6" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-12.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Like Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-12.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Sub Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-12.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Views Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-12.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Comments Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" data-toggle="collapse" data-target="#menu7" aria-expanded="false" aria-controls="menu7">
-                        <div class="left-menu__img">
-                            <img src="images/menu-13.png" alt="">
-                        </div>
-                        <span>Dịch Vụ Shopee</span>
-                    </a>
-                    <ul id="menu7" class="sub-menu-item collapse" data-parent="#menu">
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-13.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Tim Shopee</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-13.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Folows Shopee</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img width="17" src="images/menu-13.png" alt="">
-                                <span class="sub-menu-item__name">Tăng Combo Cả 2</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-14.png" alt="">
-                        </div>
-                        <span>Dịch Vụ Tiktok</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="left-menu__img">
-                            <img src="images/menu-15.png" alt="">
-                        </div>
-                        <span>Dịch Vụ Lazada</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="container" class="content-wrapper">
-            <div id="content" class="content">
-                <div class="top">
-                    <div class="top__create-post">
-                        <div class="top__create-post__header">Create Post</div>
-                        <div class="top__create-post__form">
-                            <img src="images/avatar.png" alt="">
-                            <input type="text" placeholder="Lê Anh Tuấn, hãy viết một điều gì đó...">
-                            <a href="#" class="top__create-post__buttons_sp">
-                                <img src="images/picture.png" alt="">
-                                <span>Ảnh/Video</span>
-                            </a>
-                        </div>
-                        <div class="top__create-post__buttons row">
-                            <div class="col-sm-6 p-0 text-center">
-                                <a href="#">
-                                    <img src="images/picture.png" alt="">
-                                    <span>Ảnh/Video</span>
-                                </a>
-                            </div>
-                            <div class="col-sm-6 p-0 text-center">
-                                <a href="#">
-                                    <img src="images/emoji.png" alt="">
-                                    <span>Cảm xúc/Hoạt động</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="top__post">
-                        <div class="top__post__header">
-                            <a href="#">
-                                <img width="44" src="images/avatar.png" alt="">
-                            </a>
-                            <div class="top__post__header__name">
-                                <div class="d-flex align-items-end">
-                                    <a href="#">Lê Anh Tuấn</a>
-                                    <span class="top__post__header__name__new-img ml-2">Đã thêm một ảnh mới</span>
-                                </div>
-                                <div class="top__post__header__time">
-                                    1 giờ trước
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top__post__body">
-                            <div class="top__post__body_content">
-                                Ra mắt người dùng vào tháng 4/2020, Clubhouse đã thu hút được sự tham gia của một số tên tuổi hàng đầu trong giới kinh doanh và Hollywood như Elon Musk, Mark Zuckerberg, Tiffany Haddish, Jared Leto,... Ứng dụng này cho phép người dùng tổ chức các chương trình radio trực tuyến của riêng mình. Người nghe có thể đăng nhập và yêu cầu tham gia vào các cuộc trò chuyện liên quan đến chủ đề mà họ quan tâm. Theo Paul Davison và Rohan Seth - hai nhà đồng sáng lập Alpha Exploration Co., công ty khởi nghiệp đứng sau Clubhouse, mục tiêu ngay từ đầu của ứng dụng là “ưu tiên những nhà sáng tạo” và giúp họ “xây dựng một cộng đồng, nhóm khán giả với sức ảnh hưởng mạnh mẽ”.
-                            </div>
-                            <div class="top__post__body_thumbnail">
-                                <img class="img-fluid" src="images/post-image.png" alt="">
-                            </div>
-                        </div>
-                        <div class="d-flex top__post__reaction">
-                            <div class="d-flex top__post__reaction__item">
-                                <img width="32" src="images/like-icon.png" alt="">
-                                <span class="ml-2">144 Likes</span>
-                            </div>
-                            <div class="d-flex top__post__reaction__item ml-3">
-                                <img width="32" src="images/sad-icon.png" alt="">
-                                <span class="ml-2">14 Sad</span>
-                            </div>
-                            <div class="d-flex top__post__reaction__item comment">
-                                <img width="32" src="images/comment-icon.png" alt="">
-                                <span class="ml-2">24 Comments</span>
-                            </div>
-                        </div>
-                        <div class="d-flex top__post__comment">
-                            <div class="top__post__comment__item">
-                                <div class="top__post__comment__item__avatar">
-                                    <img width="40" src="images/avatar.png" alt="">
-                                </div>
-                                <div class="top__post__comment__item__right">
-                                    <a href="#" class="top__post__comment__item__right__name">Song Joong-ki</a>
-                                    <div class="top__post__comment__item__right__content">Đây là một ứng dụng thật tuyệt vời!</div>
-                                    <ul class="top__post__comment__item__right__reaction">
-                                        <li><a href="#">Like</a></li>
-                                        <li><a href="#">Sad</a></li>
-                                        <li><a href="#">Reply</a></li>
-                                        <li><span>5 phút trước</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex top__post__comment">
-                            <div class="top__post__comment__item">
-                                <div class="top__post__comment__item__avatar">
-                                    <img width="40" src="images/avatar.png" alt="">
-                                </div>
-                                <div class="top__post__comment__item__right">
-                                    <a href="#" class="top__post__comment__item__right__name">Song Joong-ki</a>
-                                    <div class="top__post__comment__item__right__content">Đây là một ứng dụng thật tuyệt vời!</div>
-                                    <ul class="top__post__comment__item__right__reaction">
-                                        <li><a href="#">Like</a></li>
-                                        <li><a href="#">Sad</a></li>
-                                        <li><a href="#">Reply</a></li>
-                                        <li><span>5 phút trước</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top__post__form">
-                            <input placeholder="Viết bình luận..." name="comment" type="text"/>
-                            <div class="top__post__form__buttons">
-                                <a href="#"><img width="22" src="images/emoji-gray.png" alt=""></a>
-                                <a href="#"><img width="22" src="images/image-gray.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="right-menu" class="right-menu">
-            </div>
-        </div>
-        <div style="display: none;" id="notification" class="notification">
+		<div class="main__wrapper">
+			<div id="left-menu" class="left-menu">
+				<ul id="menu" class="menu-item">
+					<li>
+						<a href="#" class="collapsed" data-toggle="collapse" data-target="#menu1" aria-expanded="false" aria-controls="menu1">
+							<div class="left-menu__img">
+								<img src="images/menu-1.png" alt="">
+							</div>
+							<span>Tài khoản</span>
+						</a>
+						<ul id="menu1" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a data-menu="recharge" href="javascript:;">
+									<img width="17" src="images/account-submenu-1.png" alt="">
+									<span class="sub-menu-item__name">Nạp tiền tự động</span>
+								</a>
+							</li>
+							<li>
+								<a data-menu="network" href="javascript:;">
+									<img width="17" src="images/account-submenu-2.png" alt="">
+									<span class="sub-menu-item__name">Nạp tiền bằng thẻ cào</span>
+								</a>
+							</li>
+							<li>
+								<a data-menu="transaction" href="#">
+									<img width="17" src="images/account-submenu-3.png" alt="">
+									<span class="sub-menu-item__name">Lịch sử giao dịch</span>
+								</a>
+							</li>
+							<li>
+								<a data-menu="get-id" href="#">
+									<img width="17" src="images/account-submenu-4.png" alt="">
+									<span class="sub-menu-item__name">Lấy ID</span>
+								</a>
+							</li>
+							<li>
+								<a data-menu="contact" href="javascript:;">
+									<img width="17" src="images/account-submenu-5.png" alt="">
+									<span class="sub-menu-item__name">Liên hệ hỗ trợ</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="collapsed" data-toggle="collapse" data-target="#menu2" aria-expanded="false" aria-controls="menu2">
+							<div class="left-menu__img">
+								<img src="images/menu-2.png" alt="">
+							</div>
+							<span>Like Fanpage</span>
+						</a>
+						<ul id="menu2" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a data-menu="like-fanpage" href="#">
+									<img width="17" src="images/menu-2.png" alt="">
+									<span class="sub-menu-item__name">Like Page 1 (Duyệt Tay)</span>
+									<div class="sub-menu-item__hot">
+										<img width="17" src="images/hot.png" alt="">
+										<span>HOT</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a data-menu="like-fanpage" href="#">
+									<img width="17" src="images/menu-2.png" alt="">
+									<span class="sub-menu-item__name">Like Page 2 (fsub.lebooks.me)</span>
+									<div class="sub-menu-item__hot">
+										<img width="17" src="images/sale.png" alt="">
+										<span>SALE</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a data-menu="like-fanpage" href="#">
+									<img width="17" src="images/menu-2.png" alt="">
+									<span class="sub-menu-item__name">Like Page 3 (autofb88)</span>
+									<div class="sub-menu-item__hot">
+										<img width="17" src="images/maintaince.png" alt="">
+										<span>BẢO TRÌ</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-3.png" alt="">
+							</div>
+							<span>Đổi Tên Fanpage</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="collapsed" data-toggle="collapse" data-target="#menu3" aria-expanded="false" aria-controls="menu3">
+							<div class="left-menu__img">
+								<img src="images/menu-4.png" alt="">
+							</div>
+							<span>Like Post</span>
+						</a>
+						<ul id="menu3" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-4.png" alt="">
+									<span class="sub-menu-item__name">Like Post 1 (traodoisub.com)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-4.png" alt="">
+									<span class="sub-menu-item__name">Like Post 2 (autofb88.com)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-4.png" alt="">
+									<span class="sub-menu-item__name">Like Post 3 (autofb88.com)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-4.png" alt="">
+									<span class="sub-menu-item__name">Like Post Bấm Tay (autofb88.com)</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="collapse" data-target="#menu4" aria-expanded="false" aria-controls="menu4">
+							<div class="left-menu__img">
+								<img src="images/menu-5.png" alt="">
+							</div>
+							<span>Tăng Folows</span>
+						</a>
+						<ul id="menu4" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-5.png" alt="">
+									<span class="sub-menu-item__name">Tăng Folows 1 (fsub.lebooks.me)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-5.png" alt="">
+									<span class="sub-menu-item__name">Tăng Folows 2 (sv5 autofb88.com)</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-5.png" alt="">
+									<span class="sub-menu-item__name">Tăng Folows 3 (sv6 autofb88.com)</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-6.png" alt="">
+							</div>
+							<span>Like Fanpage</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="collapse" data-target="#menu5" aria-expanded="false" aria-controls="menu5">
+							<div class="left-menu__img">
+								<img src="images/menu-7.png" alt="">
+							</div>
+							<span>VIP Like</span>
+						</a>
+						<ul id="menu5" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-7.png" alt="">
+									<span class="sub-menu-item__name">VIP Like Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-7.png" alt="">
+									<span class="sub-menu-item__name">VIP Like Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-7.png" alt="">
+									<span class="sub-menu-item__name">VIP Comment Facebook</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-8.png" alt="">
+							</div>
+							<span>Tăng Share Live Group</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-9.png" alt="">
+							</div>
+							<span>Buff Comment</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-10.png" alt="">
+							</div>
+							<span>VIP Comment</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-11.png" alt="">
+							</div>
+							<span>Tăng mắt, view</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="collapse" data-target="#menu6" aria-expanded="false" aria-controls="menu6">
+							<div class="left-menu__img">
+								<img src="images/menu-12.png" alt="">
+							</div>
+							<span>Dịch Vụ Instagram</span>
+						</a>
+						<ul id="menu6" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-12.png" alt="">
+									<span class="sub-menu-item__name">Tăng Like Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-12.png" alt="">
+									<span class="sub-menu-item__name">Tăng Sub Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-12.png" alt="">
+									<span class="sub-menu-item__name">Tăng Views Instagram</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-12.png" alt="">
+									<span class="sub-menu-item__name">Tăng Comments Instagram</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-toggle="collapse" data-target="#menu7" aria-expanded="false" aria-controls="menu7">
+							<div class="left-menu__img">
+								<img src="images/menu-13.png" alt="">
+							</div>
+							<span>Dịch Vụ Shopee</span>
+						</a>
+						<ul id="menu7" class="sub-menu-item collapse" data-parent="#menu">
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-13.png" alt="">
+									<span class="sub-menu-item__name">Tăng Tim Shopee</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-13.png" alt="">
+									<span class="sub-menu-item__name">Tăng Folows Shopee</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img width="17" src="images/menu-13.png" alt="">
+									<span class="sub-menu-item__name">Tăng Combo Cả 2</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-14.png" alt="">
+							</div>
+							<span>Dịch Vụ Tiktok</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="left-menu__img">
+								<img src="images/menu-15.png" alt="">
+							</div>
+							<span>Dịch Vụ Lazada</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="container" class="content-wrapper">
+				<div id="content" class="content">
+					<div class="top">
+						<div class="top__create-post">
+							<div class="top__create-post__header">Create Post</div>
+							<div class="top__create-post__form">
+								<img src="images/avatar.png" alt="">
+								<input type="text" placeholder="Lê Anh Tuấn, hãy viết một điều gì đó...">
+								<a href="#" class="top__create-post__buttons_sp">
+									<img src="images/picture.png" alt="">
+									<span>Ảnh/Video</span>
+								</a>
+							</div>
+							<div class="top__create-post__buttons row">
+								<div class="col-sm-6 p-0 text-center">
+									<a href="#">
+										<img src="images/picture.png" alt="">
+										<span>Ảnh/Video</span>
+									</a>
+								</div>
+								<div class="col-sm-6 p-0 text-center">
+									<a href="#">
+										<img src="images/emoji.png" alt="">
+										<span>Cảm xúc/Hoạt động</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="top__post">
+							<div class="top__post__header">
+								<a href="#">
+									<img width="44" src="images/avatar.png" alt="">
+								</a>
+								<div class="top__post__header__name">
+									<div class="d-flex align-items-end">
+										<a href="#">Lê Anh Tuấn</a>
+										<span class="top__post__header__name__new-img ml-2">Đã thêm một ảnh mới</span>
+									</div>
+									<div class="top__post__header__time">
+										1 giờ trước
+									</div>
+								</div>
+							</div>
+							<div class="top__post__body">
+								<div class="top__post__body_content">
+									Ra mắt người dùng vào tháng 4/2020, Clubhouse đã thu hút được sự tham gia của một số tên tuổi hàng đầu trong giới kinh doanh và Hollywood như Elon Musk, Mark Zuckerberg, Tiffany Haddish, Jared Leto,... Ứng dụng này cho phép người dùng tổ chức các chương trình radio trực tuyến của riêng mình. Người nghe có thể đăng nhập và yêu cầu tham gia vào các cuộc trò chuyện liên quan đến chủ đề mà họ quan tâm. Theo Paul Davison và Rohan Seth - hai nhà đồng sáng lập Alpha Exploration Co., công ty khởi nghiệp đứng sau Clubhouse, mục tiêu ngay từ đầu của ứng dụng là “ưu tiên những nhà sáng tạo” và giúp họ “xây dựng một cộng đồng, nhóm khán giả với sức ảnh hưởng mạnh mẽ”.
+								</div>
+								<div class="top__post__body_thumbnail">
+									<img class="img-fluid" src="images/post-image.png" alt="">
+								</div>
+							</div>
+							<div class="d-flex top__post__reaction">
+								<div class="d-flex top__post__reaction__item">
+									<img width="32" src="images/like-icon.png" alt="">
+									<span class="ml-2">144 Likes</span>
+								</div>
+								<div class="d-flex top__post__reaction__item ml-3">
+									<img width="32" src="images/sad-icon.png" alt="">
+									<span class="ml-2">14 Sad</span>
+								</div>
+								<div class="d-flex top__post__reaction__item comment">
+									<img width="32" src="images/comment-icon.png" alt="">
+									<span class="ml-2">24 Comments</span>
+								</div>
+							</div>
+							<div class="d-flex top__post__comment">
+								<div class="top__post__comment__item">
+									<div class="top__post__comment__item__avatar">
+										<img width="40" src="images/avatar.png" alt="">
+									</div>
+									<div class="top__post__comment__item__right">
+										<a href="#" class="top__post__comment__item__right__name">Song Joong-ki</a>
+										<div class="top__post__comment__item__right__content">Đây là một ứng dụng thật tuyệt vời!</div>
+										<ul class="top__post__comment__item__right__reaction">
+											<li><a href="#">Like</a></li>
+											<li><a href="#">Sad</a></li>
+											<li><a href="#">Reply</a></li>
+											<li><span>5 phút trước</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex top__post__comment">
+								<div class="top__post__comment__item">
+									<div class="top__post__comment__item__avatar">
+										<img width="40" src="images/avatar.png" alt="">
+									</div>
+									<div class="top__post__comment__item__right">
+										<a href="#" class="top__post__comment__item__right__name">Song Joong-ki</a>
+										<div class="top__post__comment__item__right__content">Đây là một ứng dụng thật tuyệt vời!</div>
+										<ul class="top__post__comment__item__right__reaction">
+											<li><a href="#">Like</a></li>
+											<li><a href="#">Sad</a></li>
+											<li><a href="#">Reply</a></li>
+											<li><span>5 phút trước</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="top__post__form">
+								<input placeholder="Viết bình luận..." name="comment" type="text"/>
+								<div class="top__post__form__buttons">
+									<a href="#"><img width="22" src="images/emoji-gray.png" alt=""></a>
+									<a href="#"><img width="22" src="images/image-gray.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="right-menu" class="right-menu">
+				</div>
+			</div>
+			<div style="display: none;" id="notification" class="notification">
             <div class="header__profile__notification">
                 <div class="header__profile__notification__title">Thông báo</div>
                 <ul class="header__profile__notification__list">
@@ -571,7 +574,8 @@
                 </ul>
             </div>
         </div>
-    </div>
+		</div>
+	</div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/style.js?v=1.5"></script>
